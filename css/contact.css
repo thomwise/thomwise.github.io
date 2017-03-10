@@ -1,0 +1,22 @@
+/*========LEFT SIDE=========*/
+.dr {
+  height: 180px;
+  width: auto;
+}
+
+.table {
+  margin-top: 20px;
+}
+
+/*==========RIGHT SIDE===========*/
+iframe {
+  height: 300px;
+  width: 400px;
+}
+
+@media only screen and (max-width: 430px) {
+  iframe {
+    height: 200px;
+    width: 300px;
+  }
+}
