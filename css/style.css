@@ -6,6 +6,10 @@
   margin-top: 22px;
 }
 
+.bottom-pad {
+  padding-bottom: 22px;
+}
+
 .no-space {
   margin: 0;
 }
@@ -25,6 +29,7 @@ li {
 img {
   -webkit-transition: .5s ease;
   transition: .5s ease;
+  box-shadow: 3px 3px 5px #000;
 }
 
 img:hover {
@@ -33,10 +38,10 @@ img:hover {
   transition: .5s ease;
 }
 
-/*======HEADER======*/
+/*======HEADER SECTION======*/
 #brand {
   font-family: 'Titillium web';
-  font-size: 39px;
+  font-size: 37px;
 }
 
 header {
@@ -79,11 +84,59 @@ header {
 
 @media only screen and (max-width: 390px) {
   .heading {
-    font-size: 29px;
+    font-size: 27px;
   }
 }
 
 /*=======ABOUT SECTION=======*/
 .about {
   background-color: rgba(160, 141, 124, .5);
+}
+
+.bio {
+  background-image: url(../images/dunes.jpg);
+  height: 500px;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #000;
+}
+
+.row div div p {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.med-font {
+  font-size: 24px;
+}
+
+#refs {
+  font-size: 16px;
+  padding: 10px;
+  color: inherit;
+  font-style: italic;
+}
+
+#refs:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*==========CONTACT SECTION===========*/
+.parchment {
+  background-image: url('../images/parchment.jpg');
+  height: 550px;
+  background-position: center;
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+.map {
+  height: 300px;
+  width: 450px;
+}
+
+.btn-success {
+  box-shadow: 2px 2px 2px #000;
 }
