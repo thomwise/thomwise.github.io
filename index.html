@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Thomas Wise Portfolio</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#scroller">
     <!-- HEADER STARTS -->
-    <header class="navbar navbar-default navbar-fixed-top">
+    <header id="scroller" class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -24,7 +24,7 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a id="deco" href="#home">Home</a></li>
+            <li class="active"><a id="deco" href="#home">Home</a></li>
             <li><a id="deco" href="#about">About</a></li>
             <li><a id="deco" href="#contact">Contact</a></li>
           </ul>
@@ -36,50 +36,81 @@
     <!-- HERO STARTS -->
     <div id="home" class="jumbotron no-space">
       <div class="row">
-        <h1 id="white-text" class="heading pull-right right-space no-pad">>Web Developer/Designer<</h1>
+        <h1 class="heading pull-right right-space no-pad">>Web Developer/Designer<</h1>
         <img src="img/thomwise.jpg" class="self img-responsive center-block" alt="Self Portrait">
       </div>
     </div>
     <!-- HERO ENDS -->
     <!-- ABOUT STARTS -->
-    <div id="about" class="about container top-pad">
+    <div id="about" class="about-wrapper container top-pad">
       <div class="row">
-        <h1 class="text-center">>About<</h1>
+        <h1 class="text-center about">>About<</h1>
       </div>
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-10 col-md-offset-1">
           <h3 class="text-center">Bio</h3>
           <p class="top-space text-center">Some things you should know about me</p>
           <div class="bio">
             <p>
-              I am an adventurer, a philanthropist and enjoy anything and everything to do with the great outdoors. I try to take the inspiration from my experiences in travel and out in nature and incorporate it into the design of my websites. I am always learning and will strive to provide the highest quality product my clients in whatever area of business they want. Whether you need help branding, creative design, or building a whole website from scratch, I aim to provide a functional resource to meet whatever need you may have.
+              I am an adventurer, a philanthropist and enjoy anything and everything to do with the great outdoors.<br><br>I try to take the inspiration from my experiences in travel and out in nature and incorporate it into the design of my websites.<br><br>I am always learning and will strive to provide the highest quality product my clients in whatever area of business they want.<br><br>Whether you need help branding, creative design, or building a whole website from scratch, I aim to provide a functional resource to meet whatever need you may have.
             </p>
           </div>
-          <hr>
-          <ul class="med-font text-center top-space no-pad">References
-            <br>
-            <a id="refs" href="https://github.com/ryekerjh" target="_blank"><li>Ryeker Herndon (Web Developer Genius)</li></a>
-            <a id="refs" href="https://www.youtube.com/watch?v=Cwkej79U3ek" target="_blank"><li>Vanessa Carlton (Singer/Songwriter)</li></a>
-            <a id="refs" href="https://en.wikipedia.org/wiki/Bill_Gates" target="_blank"><li>Bill Gates (Co-Founder of Microsoft)</li></a>
-            <a id="refs" href="#" target="_blank"><li>Susan Wise (My Mom)</li></a>
+          <ul class="med-font text-center top-space bottom-space">
+            <h3>References</h3>
+            <a id="refs" href="https://github.com/ryekerjh" target="_blank"><p class="med-font">"He's the best student I've ever had..."</p><li>Ryeker Herndon (Web Developer Genius)</li></a>
+            <a id="refs" href="https://github.com/ForrestSeale" target="_blank"><p class="med-font">"Ryeker really said that."</p><li>Forrest Seale (Advanced Geekwise Student)</li></a>
+            <a id="refs" href="https://www.youtube.com/watch?v=Cwkej79U3ek" target="_blank"><p class="med-font">"He built my web page, so I wrote this song for him."</p><li>Vanessa Carlton (Singer/Songwriter)</li></a>
+            <a id="refs" href="https://en.wikipedia.org/wiki/Bill_Gates" target="_blank"><p class="med-font">"I only wish I were as brilliant with web design as Thomas, his grasp of web design is unparalleled."</p><li>Bill Gates (Co-Founder of Microsoft)</li></a>
+            <a id="refs" href="#" target="_blank"><p class="med-font">"He's always been my favorite child."</p><li>Susan Wise (My Mom)</li></a>
           </ul>
         </div>
-        <div class="col-md-5 col-md-offset-2 bottom-pad">
-          <h3 class="text-center">Completed Projects</h3>
-          <p class="text-center top-space ">First Class Project (Not Mobile Responsive)</p>
-          <a href="https://twise88.github.io/intro-web-first-project/" target="_blank"><img class="img-responsive center-block" src="img/zion_page.jpg" alt="Zion Web Page"></a>
-          <p class="text-center top-space">Second Class Project (Not Mobile Responsive)</p>
-          <a href="https://twise88.github.io/bicycles-rock-the-world/" target="_blank" title="Not Mobile-Friendly"><img class="img-responsive center-block" src="img/bike_page.jpg" alt="Bike Web Page"></a>
-          <p class="text-center top-space">Third Class Project (Mobile Responsive)</p>
-          <a href="https://geekwiseb2.github.io/pet-store-class-twise88/" target="_blank" title="Mobile-Friendly"><img class="img-responsive center-block" src="img/petstore_page.jpg" alt="Pet Store Web Page"></a>
-          <p class="text-center top-space">Freelance Project (Mobile Responsive)</p>
-          <a href="#" target="_blank" title="Mobile-Friendly"><img class="img-responsive center-block" src="img/madera_page.jpg" alt="Madera Church Web Page"></a>
+        <h3 class="text-center bottom-pad">Completed Projects</h3>
+        <div class="carousel-wrapper col-sm-8 col-sm-offset-2 no-pad bottom-space">
+          <!-- Carousel Begins -->
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <a href="https://twise88.github.io/intro-web-first-project/" target="_blank" title="Not Mobile-Friendly"><img class="img-responsive center-block" src="img/zion_page.jpg" alt="Zion Web Page"></a>
+              </div>
+              <div class="item">
+                <a href="https://twise88.github.io/bicycles-rock-the-world/" target="_blank" title="Not Mobile-Friendly"><img class="img-responsive center-block" src="img/bike_page.jpg" alt="Bike Web Page"></a>
+              </div>
+              <div class="item">
+                <a href="https://geekwiseb2.github.io/pet-store-class-twise88/" target="_blank" title="Mobile-Friendly"><img class="img-responsive center-block" src="img/petstore_page.jpg" alt="Pet Store Web Page"></a>
+              </div>
+              <div class="item">
+                <a href="https://twise88.github.io/restaurante/" target="_blank" title="Mobile-Friendly"><img class="img-responsive center-block" src="img/restaurante.jpg" alt="Restaurant Web Page"></a>
+              </div>
+              <div class="item">
+                <a href="#" target="_blank" title="Mobile-Friendly"><img class="img-responsive center-block" src="img/madera_page.jpg" alt="Madera Church Web Page"></a>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- Carousel Ends -->
         </div>
       </div>
     </div>
     <!-- ABOUT ENDS -->
     <!-- CONTACT STARTS -->
-    <div id="contact" class="container-fluid parchment top-pad">
+    <div id="contact" class="contact container-fluid parchment top-pad">
       <div class="row">
         <div class="container">
           <div class="col-xs-12">
