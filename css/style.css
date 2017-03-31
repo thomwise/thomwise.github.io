@@ -1,0 +1,225 @@
+/*========FONTS=========*/
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Amatic+SC|Gloria+Hallelujah|Rajdhani|Sue+Ellen+Francisco|Walter+Turncoat');
+
+/*=======UNIVERSALS=======*/
+.top-space {
+  margin-top: 33px;
+}
+
+.right-space {
+  margin-right: 30px;
+}
+
+.bottom-space {
+  margin-bottom: 30px;
+}
+
+.bottom-pad {
+  padding-bottom: 22px;
+}
+
+.no-space {
+  margin: 0;
+}
+
+.top-pad {
+  padding-top: 165px;
+}
+
+.no-pad {
+  padding: 0;
+}
+
+.med-font {
+  font-size: 13px;
+}
+
+body {
+  position: relative;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  box-shadow: 3px 3px 5px #000;
+}
+
+.item a img:hover {
+  opacity: .4;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+h1 {
+  color: #B81727;
+  text-shadow: 1px 1px 3px #807C7C;
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+/*======HEADER SECTION======*/
+#brand {
+  font-family: 'Walter Turncoat';
+  font-size: 30px;
+  color: #B81727;
+  text-shadow: 1px 1px 2px #807C7C;
+}
+
+header {
+  background: rgb(95,95,95);
+  background: -webkit-linear-gradient(bottom,rgba(255,254,179, .8),rgba(95,95,95,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(top,rgba(255,254,179, .8),rgba(95,95,95,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(top,rgba(255,254,179, .8),rgba(95,95,95,1)); /*Fx 3.6-15*/
+  background: linear-gradient(to top, rgba(164,189,252, .4),rgba(95,95,95,1)); /*Standard*/
+  border: none;
+}
+
+.active {
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #000;
+}
+
+#deco {
+  border-bottom: none;
+  color: #B81727;
+  font-weight: bold;
+  font-family: 'Allerta Stencil';
+}
+#deco:hover {
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px #000;
+  color: #000;
+}
+
+/*=======HERO SECTION=======*/
+.jumbotron {
+  background-image: url('../img/forest.jpg');
+  height: 700px;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.self {
+  margin-top: 190px;
+  border-radius: 50%;
+}
+
+.jumbotron h1 {
+  margin-top: 80px;
+  color: #B81727;
+  text-shadow: 2px 2px 5px #000;
+  font-family: 'Walter Turncoat';
+}
+
+@media only screen and (max-width: 600px) {
+  .self {
+    margin-top: 150px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .jumbotron {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .heading {
+    font-size: 27px;
+  }
+}
+
+/*=======ABOUT SECTION=======*/
+.about-wrapper {
+  background-color: rgba(164,189,252, .2);
+  box-shadow: 5px 5px 50px #000;
+  font-family: 'Walter Turncoat';
+}
+
+.bio {
+  background-image: url('../img/dunes.jpg');
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 3px 3px 15px #000;
+}
+
+.row div div p {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.med-font {
+  font-size: 24px;
+}
+
+#refs {
+  font-size: 16px;
+  padding: 10px;
+  color: inherit;
+  font-style: italic;
+
+}
+
+a, a:hover, a:visited, a:focus {
+  text-decoration: none;
+}
+
+#refs:hover {
+  font-weight: bold;
+  color: #B81727;
+}
+
+.carousel-caption p {
+  text-shadow: 1px 1px 4px #000;
+}
+
+.carousel-wrapper {
+  box-shadow: 2px 2px 14px #000;
+}
+
+@media only screen and (max-width: 369px) {
+  .bio {
+    height: 615px;
+  }
+}
+
+/*==========CONTACT SECTION===========*/
+.parchment {
+  background-image: url('../img/parchment.jpg');
+  height: 800px;
+  background-position: center;
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+.contact {
+  font-family: 'Walter Turncoat';
+}
+
+.map {
+  height: 300px;
+  width: 450px;
+}
+
+.btn-success {
+  box-shadow: 2px 2px 2px #000;
+}
+
+@media only screen and (max-width: 500px) {
+  .map {
+    height: 200px;
+    width: 275px;
+  }
+}
