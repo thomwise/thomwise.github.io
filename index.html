@@ -122,7 +122,11 @@
           <div class="row">
             <div class="col-md-5">
               <h2>Send Me Your Info</h2>
-              <form>
+              <form id="emailForm">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="name" class="form-control" id="name" placeholder="Enter name">
+                </div>
                 <div class="form-group">
                   <label for="email">Email:</label>
                   <input type="email" class="form-control" id="email" placeholder="Enter email">
@@ -133,14 +137,15 @@
                 </div>
                 <div class="form-group">
                   <label for="comment">Comment:</label>
-                  <textarea class="form-control" rows="5" id="comment" placeholder="Tell me what you need."></textarea>
+                  <textarea class="form-control" rows="5" id="comment" placeholder="Tell me what you need." maxlength="150"></textarea>
+                  <p id="maxCharacters"></p>
                 </div>
                 <button type="submit" class="btn btn-success">Submit</button>
               </form>
             </div>
             <div class="col-md-5 col-md-offset-1 text-center top-space">
-              <p>123 Address Ave.<br>Fresno, CA 93728</p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.7367605748614!2d-119.82461144949565!3d36.75288917796351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8094673195546f4b%3A0xee80b918abd281d6!2sFresno+Chaffee+Zoo!5e0!3m2!1sen!2sus!4v1489790137990" class="map" allowfullscreen></iframe>
+              <img class="map" src="img/ca.png" alt="Map of California">
+              <span class="beacon"></span>
             </div>
           </div>
         </div>
@@ -159,6 +164,7 @@
     </footer>
     <!-- FOOTER ENDS -->
     <!-- SCRIPTS -->
+    <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   	<script src="js/bootstrap.min.js"></script>
   </body>
