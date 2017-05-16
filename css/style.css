@@ -93,7 +93,7 @@ header {
   border: none;
 }
 
-.active {
+.active:active {
   border-radius: 5px;
   box-shadow: 2px 2px 5px #000;
 }
@@ -144,12 +144,6 @@ header {
   }
 }
 
-/*@media only screen and (max-width: 390px) {
-  .heading {
-    font-size: 27px;
-  }
-}*/
-
 /*=======ABOUT SECTION=======*/
 .about-wrapper {
   background-color: rgba(164,189,252, .2);
@@ -159,11 +153,25 @@ header {
 
 .bio {
   background-image: url('../img/dunes.jpg');
-  height: 500px;
+  height: 520px;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
   box-shadow: 3px 3px 15px #000;
+}
+
+.slide-in {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.align-left.slide-in {
+      transform:translateX(-30%) scale(0.95);
+    }
+
+.slide-in.active2 {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
 }
 
 .row div div p {
@@ -203,7 +211,7 @@ a, a:hover, a:visited, a:focus {
 
 @media only screen and (max-width: 369px) {
   .bio {
-    height: 615px;
+    height: 630px;
   }
 }
 
@@ -220,56 +228,66 @@ a, a:hover, a:visited, a:focus {
   font-family: 'Walter Turncoat';
 }
 
+label[for="name"]:after {
+  content: " *";
+  color: #B81727;
+}
+
+label[for="email"]:after {
+  content: " *";
+  color: #B81727;
+}
+
 .beacon {
-  position:absolute;
-  top:53%;
-  left:49%;
-  background-color:#B81;
-  height:8px;
-  width:8px;
-  border-radius:50%;
-  -webkit-transform:translateX(-50%) translateY(-50%);
+  position: absolute;
+  top: 53%;
+  left: 47%;
+  background-color: #B81;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
 }
 
 .beacon:before {
-  position:absolute;
-  content:"";
-  height:8px;
-  width:8px;
-  left:0;
-  top:0;
-  background-color:transparent;
-  border-radius:50%;
-  box-shadow:0px 0px 2px 2px #B81;
-  -webkit-animation:active 2s infinite linear;
-  animation:active 2s infinite linear;
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px 2px #B81;
+  -webkit-animation: active 2s infinite linear;
+  animation: active 2s infinite linear;
 }
 
 @-webkit-keyframes active{
   0%{
-    -webkit-transform:scale(.1);
-    opacity:1;
+    -webkit-transform: scale(.1);
+    opacity: 1;
   }
   70%{
-    -webkit-transform:scale(2.5);
-    opacity:0;
+    -webkit-transform: scale(2.5);
+    opacity: 0;
   }
   100%{
-    opacity:0;
+    opacity: 0;
   }
 }
 
 @keyframes active{
   0%{
-    transform:scale(.1);
-    opacity:1;
+    transform: scale(.1);
+    opacity: 1;
   }
   70%{
-    transform:scale(2.5);
-    opacity:0;
+    transform: scale(2.5);
+    opacity: 0;
   }
   100%{
-    opacity:0;
+    opacity: 0;
   }
 }
 
@@ -284,11 +302,11 @@ a, a:hover, a:visited, a:focus {
 
 @media (max-width: 1000px) {
   .parchment {
-    height: 1200px;
+    height: 1100px;
   }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 1000px) {
   .map {
     width: 320px;
   }
@@ -298,4 +316,8 @@ a, a:hover, a:visited, a:focus {
 footer {
   background: linear-gradient(to top, rgba(95,95,95,1), rgba(164,189,252, .4));
   height: 100px;
+}
+
+.fa {
+  color: #B81727;
 }
