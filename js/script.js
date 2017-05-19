@@ -20,17 +20,20 @@ const sliderImages = document.querySelectorAll('.slide-in');
 function checkSlide(e) {
 sliderImages.forEach(sliderImage => {
   // half way through the image
-  const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+  const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.style.height;
   // bottom of the image
-  const imageBottom = sliderImage.offsetTop +sliderImage.height;
+  const imageBottom = sliderImage.offsetTop + sliderImage.style.height;
   const isHalfShown = slideInAt > sliderImage.offsetTop;
   const isNotScrolledPast = window.scrollY < imageBottom;
+
   console.log(slideInAt);
+  console.log(isHalfShown);
+  console.log(isNotScrolledPast);
 
   if (isHalfShown && isNotScrolledPast) {
-    sliderImage.classList.add('active');
+    sliderImage.classList.remove('active2');
   } else {
-    sliderImage.classList.remove('active');
+    sliderImage.classList.add('active2');
   }
 });
 }
