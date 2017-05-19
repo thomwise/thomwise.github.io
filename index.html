@@ -53,18 +53,14 @@
         <div class="col-md-10 col-md-offset-1">
           <h3 class="text-center">Bio</h3>
           <p class="top-space text-center">Some things you should know about me</p>
-          <div class="bio">
+          <div class="bio slide-in align-left">
             <p>
               I am an adventurer, a philanthropist and enjoy anything and everything to do with the great outdoors.<br><br>I try to take the inspiration from my experiences in travel and out in nature and incorporate it into the design of my websites.<br><br>I am always learning and will strive to provide the highest quality product my clients in whatever area of business they want.<br><br>Whether you need help branding, creative design, or building a whole website from scratch, I aim to provide a functional resource to meet whatever need you may have.
             </p>
           </div>
           <ul class="med-font text-center top-space bottom-space">
             <h3>References</h3>
-            <a id="refs" href="https://github.com/ryekerjh" target="_blank"><p class="med-font">"He's the best student I've ever had..."</p><li>Ryeker Herndon (Web Developer Genius)</li></a>
-            <a id="refs" href="https://github.com/ForrestSeale" target="_blank"><p class="med-font">"Ryeker really said that."</p><li>Forrest Seale (Advanced Geekwise Student)</li></a>
-            <a id="refs" href="https://www.youtube.com/watch?v=Cwkej79U3ek" target="_blank"><p class="med-font">"He built my web page, so I wrote this song for him."</p><li>Vanessa Carlton (Singer/Songwriter)</li></a>
-            <a id="refs" href="https://en.wikipedia.org/wiki/Bill_Gates" target="_blank"><p class="med-font">"I only wish I were as brilliant with web design as Thomas, his grasp of web design is unparalleled."</p><li>Bill Gates (Co-Founder of Microsoft)</li></a>
-            <a id="refs" href="#" target="_blank"><p class="med-font">"He's always been my favorite child."</p><li>Susan Wise (My Mom)</li></a>
+            <a id="refs" href="https://github.com/ryekerjh" target="_blank"><p class="med-font">"He is dedicated and shows a lot of potential."</p><li>Ryeker Herndon (Web Developer Genius)</li></a>
           </ul>
         </div>
         <h3 class="text-center bottom-pad">Completed Projects</h3>
@@ -122,7 +118,11 @@
           <div class="row">
             <div class="col-md-5">
               <h2>Send Me Your Info</h2>
-              <form>
+              <form id="emailForm">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="name" class="form-control" id="name" placeholder="Enter name">
+                </div>
                 <div class="form-group">
                   <label for="email">Email:</label>
                   <input type="email" class="form-control" id="email" placeholder="Enter email">
@@ -133,14 +133,15 @@
                 </div>
                 <div class="form-group">
                   <label for="comment">Comment:</label>
-                  <textarea class="form-control" rows="5" id="comment" placeholder="Tell me what you need."></textarea>
+                  <textarea class="form-control" rows="5" id="comment" placeholder="Tell me what you need." maxlength="150"></textarea>
+                  <p id="maxCharacters"></p>
                 </div>
                 <button type="submit" class="btn btn-success">Submit</button>
               </form>
             </div>
             <div class="col-md-5 col-md-offset-1 text-center top-space">
-              <p>123 Address Ave.<br>Fresno, CA 93728</p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.7367605748614!2d-119.82461144949565!3d36.75288917796351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8094673195546f4b%3A0xee80b918abd281d6!2sFresno+Chaffee+Zoo!5e0!3m2!1sen!2sus!4v1489790137990" class="map" allowfullscreen></iframe>
+              <img class="map" src="img/ca.png" alt="Map of California">
+              <span class="beacon"></span>
             </div>
           </div>
         </div>
@@ -159,6 +160,7 @@
     </footer>
     <!-- FOOTER ENDS -->
     <!-- SCRIPTS -->
+    <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   	<script src="js/bootstrap.min.js"></script>
   </body>
