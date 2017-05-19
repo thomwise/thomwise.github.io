@@ -83,7 +83,6 @@ emailInput.addEventListener('blur', function(e) {
 myForm.addEventListener('submit', function(e) {
   document.getElementById('comment').value.trim();
   myForm.setAttribute('action', '"https://formspree.io/thomas.ja.wise@gmail.com"');
-  myForm.setAttribute('method', '"POST"');
 });
 
 }());
