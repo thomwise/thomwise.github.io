@@ -166,7 +166,7 @@ header {
 }
 
 .align-left.slide-in {
-      transform:translateX(-30%) scale(0.95);
+      transform:translateX(-80%) scale(0.95);
     }
 
 .slide-in.active2 {
