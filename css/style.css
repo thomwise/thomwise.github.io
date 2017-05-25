@@ -238,6 +238,10 @@ label[for="email"]:after {
   color: #B81727;
 }
 
+#phone {
+  
+}
+
 .beacon {
   position: absolute;
   top: 53%;

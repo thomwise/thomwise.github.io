@@ -16,7 +16,7 @@ function debounce(func, wait = 20, immediate = true) {
   }
 
 const sliderImages = document.querySelectorAll('.slide-in');
-  console.log(sliderImages);
+
 function checkSlide(e) {
 sliderImages.forEach(sliderImage => {
   // half way through the image
@@ -25,10 +25,6 @@ sliderImages.forEach(sliderImage => {
   const imageBottom = sliderImage.offsetTop + sliderImage.style.height;
   const isHalfShown = slideInAt > sliderImage.offsetTop;
   const isNotScrolledPast = window.scrollY < imageBottom;
-
-  console.log(slideInAt);
-  console.log(isHalfShown);
-  console.log(isNotScrolledPast);
 
   if (isHalfShown && isNotScrolledPast) {
     sliderImage.classList.remove('active2');
@@ -52,13 +48,10 @@ window.addEventListener('scroll', debounce(checkSlide));
       commentInput = document.getElementById('comment'),
       maxCharacters = document.getElementById('maxCharacters');
 
-commentInput.addEventListener('keydown', function(e) {
-  maxCharacters.textContent = "Charcters Remaining: " + (150 - commentInput.value.length);
-});
 
 nameInput.addEventListener('blur', function(e) {
   var myName = nameInput.value,
-      validName = /^[0-9a-zA-Z\s]+$/.test(myName);
+  validName = /^[0-9a-zA-Z\s]+$/.test(myName);
 
       if (!validName) {
         nameInput.classList.add('danger');
@@ -71,18 +64,29 @@ nameInput.addEventListener('blur', function(e) {
 
 emailInput.addEventListener('blur', function(e) {
   var myEmail = emailInput.value,
-      validEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(myEmail);
+  validEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(myEmail);
 
   if (!validEmail) {
     emailInput.classList.add('danger');
+    submitButton.disabled = true;
   } else {
     emailInput.classList.remove('danger');
+    submitButton.disabled = false;
   }
+});
+
+phoneInput.focus('onmouseover', function(e) {
+  e.preventDefault();
+})
+
+commentInput.addEventListener('keydown', function(e) {
+  maxCharacters.textContent = "Charcters Remaining: " + (150 - commentInput.value.length);
 });
 
 myForm.addEventListener('submit', function(e) {
   document.getElementById('comment').value.trim();
   myForm.setAttribute('action', 'https://formspree.io/thomas.ja.wise@gmail.com');
 });
+submitButton.disabled = true;
 
 }());
