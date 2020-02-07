@@ -5,7 +5,7 @@
 .github/
 .idea/
 .travis.yml
-.vagrantgit 
+.vagrant
 npm-debug.log
 package.box
 playbook.retry
