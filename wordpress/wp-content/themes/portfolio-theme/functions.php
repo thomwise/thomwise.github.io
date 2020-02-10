@@ -9,6 +9,13 @@ function portfolio_files() {
   wp_enqueue_style('portfolio_main_styles', get_template_directory_uri(), '../scss/main.scss');
 }
 
-get_background_image();
-add_theme_support('post-thumbnails');
 add_action('wp_enqueue_scripts', 'portfolio_files');
+
+function portfolio_features() {
+  register_nav_menu('headerMenuLocation', 'Header Menu Location');
+  register_nav_menu('footerMenuLocation', 'Footer Menu Location');
+  add_theme_support('post-thumbnails');
+  add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'portfolio_features');

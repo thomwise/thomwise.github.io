@@ -1,0 +1,93 @@
+@include media-sm {
+    .home {
+        padding-top: 31vh;
+        background: 
+        linear-gradient(
+            to right,
+            rgba($primary-color, .7),
+            rgba($primary-color, .3)
+        );
+        background-size: contain;
+        background-repeat: no-repeat;
+    
+        &__name {
+            font-size: 3rem;
+            padding-bottom: 1rem;
+            margin-top: 1rem;
+            border-bottom: 2px solid set-text-color($primary-color);
+
+            &--last {
+                color: $secondary-color;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@include media-md {
+    .home {
+        background: 
+        linear-gradient(
+            to right,
+            rgba($primary-color, .7),
+            rgba($primary-color, .3)
+        );
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% -100px;
+        padding-top: 70vh;
+
+        &__name {
+            font-size: 4rem;
+        }
+    }
+
+    .menu-btn {
+        visibility: hidden;
+    }
+
+    .nav {
+        visibility: visible;
+
+        .menu {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+
+            &__item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+
+            &__link {
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    .about__bio-image {
+        height: 70vh;
+    }
+
+    .projects {
+
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+}
+
+@include media-lg {
+    .projects {
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .about__bio-image {
+        height: 80vh;
+    }
+}
