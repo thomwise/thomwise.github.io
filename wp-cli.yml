@@ -1,4 +1,0 @@
-require:
-  - wp-cli/browse-command.php
-@thomwise.github:
-  ssh: vagrant:thomwise.github:/var/www/html
