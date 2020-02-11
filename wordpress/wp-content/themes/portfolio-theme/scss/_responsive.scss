@@ -1,15 +1,8 @@
 @include media-sm {
+    
     .home {
         padding-top: 31vh;
-        background: 
-        linear-gradient(
-            to right,
-            rgba($primary-color, .7),
-            rgba($primary-color, .3)
-        );
-        background-size: contain;
-        background-repeat: no-repeat;
-    
+        
         &__name {
             font-size: 3rem;
             padding-bottom: 1rem;
@@ -26,12 +19,7 @@
 
 @include media-md {
     .home {
-        background: 
-        linear-gradient(
-            to right,
-            rgba($primary-color, .7),
-            rgba($primary-color, .3)
-        );
+        
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% -100px;
@@ -50,18 +38,18 @@
         visibility: visible;
 
         .menu {
-            display: block;
-            transform: translateY(0);
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-content: space-around;
             height: 100%;
             background: transparent;
-            text-align: right;
+            position: relative;
+            left: 0;
+            top: 0;
+            transform: translateY(0);
 
-            &__item {
-                display: inline;
-                padding-right: 1.5rem;
-            }
-
-            &__link {
+            &-item a {
+                padding-top: 3rem;
                 font-size: 1.25rem;
             }
         }
@@ -81,6 +69,13 @@
 }
 
 @include media-lg {
+    .nav {
+        .menu-item a {
+            padding-top: 2.5rem;
+            font-size: 2rem;
+        }
+    } 
+
     .projects {
         &__items {
             grid-template-columns: repeat(3, 1fr);

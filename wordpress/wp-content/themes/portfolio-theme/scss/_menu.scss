@@ -58,6 +58,7 @@
     top: 0;
     left: 0;
     width: 100vw;
+    height: 3rem;
     opacity: .98;
     visibility: hidden;
 
@@ -72,9 +73,8 @@
         justify-content: center;
         height: 100vh;
         overflow: hidden;
+        padding: 1rem 0 0 15rem;
         background: $primary-color;
-        list-style-type: none;
-        padding-right: 1rem;
         transform: translateY(-100%);
         @include transition-ease;
 
@@ -84,7 +84,6 @@
 
         &-item {
             list-style-type: none;
-            transform: translateX(100vw);
             @include transition-ease;
 
             &.open {
@@ -97,7 +96,6 @@
         }
 
         &-item a {
-            z-index: 30;
             display: inline-block;
             font-size: 2rem;
             text-transform: uppercase;

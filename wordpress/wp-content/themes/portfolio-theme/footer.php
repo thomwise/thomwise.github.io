@@ -1,9 +1,4 @@
     <footer>
-        <?php 
-              wp_nav_menu(array(
-                  'theme_location' => 'footerMenuLocation'
-              ));
-            ?>
         <div class="social-icons">
             <a href="#!">
                 <i class="fab fa-facebook fa-2x"></i>

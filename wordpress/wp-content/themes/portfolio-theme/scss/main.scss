@@ -7,19 +7,33 @@
 @import 'responsive';
 
 body {
-    background: $primary-color;
-    background-repeat: no-repeat;
-    background-size: cover;
     color: set-text-color($primary-color);
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    &::after {
+        background-color: black;
+        content: '';
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100vw;
+        height: 100vh;
+        opacity: 40%;
+        z-index: -1;
+        
+    }
 }
 
 .logo {
+    position: fixed;
     height: 3rem;
     filter: invert(1);
-    margin-top: 1rem;
+
 }
 
 h1, h2, h3 {
