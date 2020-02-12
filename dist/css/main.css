@@ -413,7 +413,7 @@
   margin-top: 2rem;
 }
 
-@media screen and (min-width: 330px) {
+@media screen and (min-width: 300px) {
   .home {
     padding-top: 31vh;
     background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.7)), to(rgba(39, 39, 39, 0.3))), url("../img/Profile.jpg") center top no-repeat;
@@ -429,6 +429,9 @@
   .home__name--last {
     color: #ff652f;
     font-weight: 500;
+  }
+  .logo {
+    height: 3rem;
   }
 }
 
@@ -471,6 +474,9 @@
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+  .logo {
+    height: 4rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -492,7 +498,6 @@ body {
 }
 
 .logo {
-  height: 4rem;
   -webkit-filter: invert(1);
           filter: invert(1);
   margin-top: 1rem;
