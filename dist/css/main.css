@@ -307,6 +307,10 @@
   cursor: pointer;
 }
 
+.projects__item .proj-title {
+  padding-bottom: 10px;
+}
+
 .projects__item img {
   width: 100%;
 }
@@ -341,7 +345,7 @@
   z-index: 1;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: 1fr 2;
       grid-template-columns: repeat(2, 1fr);
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -471,7 +475,7 @@
     height: 70vh;
   }
   .projects__items {
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: 1fr 2;
         grid-template-columns: repeat(2, 1fr);
   }
   .logo {
@@ -481,7 +485,7 @@
 
 @media screen and (min-width: 1024px) {
   .projects__items {
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: 1fr 3;
         grid-template-columns: repeat(3, 1fr);
   }
   .about__bio-image {
