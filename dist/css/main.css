@@ -324,12 +324,13 @@
   width: 100%;
   background: #ff652f;
   opacity: 0;
+  border-radius: 25px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
 .projects__item:hover::after {
-  top: 0;
+  top: 43px;
   opacity: .8;
 }
 
@@ -345,7 +346,7 @@
   z-index: 1;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2;
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -475,7 +476,7 @@
     height: 70vh;
   }
   .projects__items {
-    -ms-grid-columns: 1fr 2;
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
   .logo {
@@ -485,7 +486,7 @@
 
 @media screen and (min-width: 1024px) {
   .projects__items {
-    -ms-grid-columns: 1fr 3;
+    -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
   .about__bio-image {

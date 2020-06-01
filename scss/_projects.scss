@@ -54,12 +54,13 @@
             width: 100%;
             background: $secondary-color;
             opacity: 0;
+            border-radius: 25px;
             @include transition-ease;
         }
 
         &:hover {
             &::after {
-                top: 0;
+                top: 43px;
                 opacity: .8;
             }
 
