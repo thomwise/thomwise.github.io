@@ -54,7 +54,7 @@
             width: 100%;
             background: $secondary-color;
             opacity: 0;
-            border-radius: 25px;
+
             @include transition-ease;
         }
 
