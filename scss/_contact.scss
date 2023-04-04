@@ -18,16 +18,28 @@
         font-size: 3rem;
         margin-bottom: 2rem;
     }
+    
+    &__container {
+        display: flex;
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+            font-size: 1.5rem;
+        }
 
-    &__list {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 2rem;
-        font-size: 1.5rem;
-    }
-
-    .social-icons {
-        position: initial;
-        margin-top: 2rem;
+        .social-icons {
+            position: initial;
+            margin-top: 2rem;
+        }
+        
+        .contact__form {
+            display: flex;
+            flex-direction: column;
+            .input-wrapper {
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
 }

@@ -1,3 +1,13 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "liveSassCompile.settings.forceBaseDirectory": "",
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/",
+            "savePathReplacementPairs": null
+        }
+    ]
 }

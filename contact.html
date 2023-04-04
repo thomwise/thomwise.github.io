@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Contact Thom Wise</title>
 </head>
 <body>
     <header>
-        <img src="/dist/img/logo.png" alt="" class="logo">
+        <img src="/img/logo.png" alt="" class="logo">
         <div class="menu-btn">
             <span class="menu-btn__burger"></span>
         </div>
@@ -42,40 +42,60 @@
     <main>
         <section class="contact">
             <h2>Contact Me..</h2>
-
-            <div class="contact__list">
-                <div class="contact__email">
-                    <i class="fas fa-envelope"></i> Email
-                    <div class="text-secondary">thomas.ja.wise@gmail.com</div>
+            <div class="contact__container">
+                <div class="contact__list">
+                    <div class="contact__email">
+                        <i class="fas fa-envelope"></i> Email
+                        <div class="text-secondary">thomas.ja.wise@gmail.com</div>
+                    </div>
+                    <div class="contact__phone">
+                        <i class="fas fa-mobile-alt"></i> Phone
+                        <div class="text-secondary">1 (707) 315 0320</div>
+                    </div>
+                    <div class="contact__address">
+                        <i class="fas fa-address-card"></i> Address
+                        <div class="text-secondary">1412 N College Ave. Fresno, CA</div>
+                    </div>
+                
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/thomas.wise.7393?ref=bookmarks">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/thomwonderlust/">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/thomas-wise-3633b6134/">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="https://github.com/thomwise">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="contact__phone">
-                    <i class="fas fa-mobile-alt"></i> Phone
-                    <div class="text-secondary">1 (707) 315 0320</div>
-                </div>
-                <div class="contact__address">
-                    <i class="fas fa-address-card"></i> Address
-                    <div class="text-secondary">1412 N College Ave. Fresno, CA</div>
-                </div>
+                <form action="submit" class="contact__form">
+                    <div class="input-wrapper">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" class="name">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="email">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" class="subject">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="" cols="30" rows="10" class="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
             </div>
-
-            <div class="social-icons">
-                <a href="https://www.facebook.com/thomas.wise.7393?ref=bookmarks">
-                    <i class="fab fa-facebook fa-2x"></i>
-                </a>
-                <a href="https://www.instagram.com/thomwonderlust/">
-                    <i class="fab fa-instagram fa-2x"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/thomas-wise-3633b6134/">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a href="https://github.com/thomwise">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-            </div>
-            <footer>&copy; Copyright 2020</footer>
+            <footer>&copy; Copyright 2023</footer>
         </section>
     </main>
-    <script src="./dist/js/main.js"></script>
+    <script src="./js/main.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js" data-auto-replace-svg="nest"></script>
 </body>
 </html>
